@@ -10,10 +10,10 @@
 	</parent>
 
 	<groupId>cn.coreqi</groupId>
-	<artifactId>spring_authorization_server_demo</artifactId>
+	<artifactId>spring_resource_server_demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>spring_authorization_server_demo</name>
+	<name>spring_resource_server_demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -32,11 +32,9 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
-		<!-- 添加 spring-authorization-server 依赖-->
 		<dependency>
-			<groupId>org.springframework.security.experimental</groupId>
-			<artifactId>spring-security-oauth2-authorization-server</artifactId>
-			<version>0.0.1</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -68,8 +66,6 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
